@@ -3,117 +3,132 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="assets/styles/main.css" rel="stylesheet">
+    <link href="./assets/styles/styles.css" rel="stylesheet" />
     <link href="assets/styles/timetable.css" rel="stylesheet">
     <title>Nos horaires</title>
 </head>
 
 <body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/src/assets/images/logoAccueil.png" alt="">
+            <nav class="navbar">
+                <a class="nav_link active" href="index.html">Accueil</a>
+                <a class="nav_link" href="activities.html">Activités</a>
+                <a class="nav_link" href="timetable.html">Horaires</a>
+                <a class="reserv" href="registration.html">Réservation</a>
+            </nav>
+    </header>
 
-    <section class="timetable">
-        <h2 id="timetable-h2">Horaires des remontées mécaniques</h2>
-        <div class="flex-container">
-            
-            <div class="grid-container">
-                <div class="days">
-                    <p>L</p>
-                    <p>M</p>
-                    <p>M</p>
-                    <p>J</p>
-                    <p>V</p>
-                    <p>S</p>
-                    <p>D</p>
-                </div>
-                <p class="date">15/12 au 31/03</p>
-                <div class="tracks">
-                    <p>piste 1</p>
-                    <p>piste 2</p>
-                    <p>piste 3</p>
-                    <p>piste 4</p>
-                    <p>piste 5</p>
-                    <p>piste 6</p>
-                    <p>piste 7</p>
-                </div>
-                <div class="open-container">
-                    <div class="open-grid-container">
-                    <div class="open-track1">
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
+    <main>
+        <section class="timetable">
+            <h2 id="timetable-h2">Horaires des remontées mécaniques</h2>
+            <div class="flex-container">
+
+                <div class="grid-container">
+                    <div class="days">
+                        <p>L</p>
+                        <p>M</p>
+                        <p>M</p>
+                        <p>J</p>
+                        <p>V</p>
+                        <p>S</p>
+                        <p>D</p>
                     </div>
-                    <div class="open-track2">
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
+                    <p class="date">15/12 au 31/03</p>
+                    <div class="tracks">
+                        <p>piste 1</p>
+                        <p>piste 2</p>
+                        <p>piste 3</p>
+                        <p>piste 4</p>
+                        <p>piste 5</p>
+                        <p>piste 6</p>
+                        <p>piste 7</p>
                     </div>
-                    <div class="open-track3">
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
+                    <div class="open-container">
+                        <div class="open-grid-container">
+                            <div class="open-track1">
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                            </div>
+                            <div class="open-track2">
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                            </div>
+                            <div class="open-track3">
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                            </div>
+                            <div class="open-track4">
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                            </div>
+                            <div class="open-track5">
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                            </div>
+                            <div class="open-track6">
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                            </div>
+                            <div class="open-track7">
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-check track-open"></i>
+                                <i class="fa-solid fa-xmark track-close"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="open-track4">
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
+                    <div class="hours">
+                        <p>9:00 - 12:15 / 13:30 - 17:30</p>
+                        <p>9:00 - 12:15 / 13:30 - 17:15</p>
+                        <p>9:00 - 12:30 / 13:30 - 17:45</p>
+                        <p>9:00 - 12:30 / 13:30 - 17:15</p>
+                        <p>9:00 - 12:15 / 13:30 - 17:15</p>
+                        <p>9:00 - 12:45 / 14:00 - 17:45</p>
+                        <p>9:00 - 12:45 / 14:00 - 17:45</p>
                     </div>
-                    <div class="open-track5">
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                    </div>
-                    <div class="open-track6">
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                    </div>
-                    <div class="open-track7">
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-check track-open"></i>
-                        <i class="fa-solid fa-xmark track-close"></i>
-                    </div>
-                </div>
-                </div>
-                <div class="hours">
-                    <p>9:00 - 12:15 / 13:30 - 17:30</p>
-                    <p>9:00 - 12:15 / 13:30 - 17:15</p>
-                    <p>9:00 - 12:30 / 13:30 - 17:45</p>
-                    <p>9:00 - 12:30 / 13:30 - 17:15</p>
-                    <p>9:00 - 12:15 / 13:30 - 17:15</p>
-                    <p>9:00 - 12:45 / 14:00 - 17:45</p>
-                    <p>9:00 - 12:45 / 14:00 - 17:45</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="https://kit.fontawesome.com/4de05780f2.js" crossorigin="anonymous"></script>
 </body>
