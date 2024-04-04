@@ -1,0 +1,61 @@
+.timetable, .flex-container, .date, .days, .tracks, .open, .hours {
+    display: flex;
+}
+
+.timetable {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#timetable-h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.date, .days {
+    width: 100vw;
+}
+
+.date {
+    justify-content: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 100px 100px 200px;
+}
+
+.days {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.tracks {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.tracks, .hours {
+    flex-direction: column; 
+}
+
+.open-container {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.hours {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
