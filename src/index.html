@@ -4,34 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
     <title>Site Neige</title>
   </head>
   <body>
-    <div class="first_background">
-      <header class="header">
-          <a href="#" class="logo"><img src="/src/assets/images/logoAccueil.png" alt="">
-          <nav class="navbar">
-              <a class="nav_link active" href="#">Accueil</a>
-              <a class="nav_link" href="#">Activités</a>
-              <a class="nav_link" href="#">Horaires</a>
-              <a class="reserv" href="#">Réservation</a>
-          </nav>
-      </header>
-      <main>
-        <div class="first_content">
-        <h2> <span class="welcome"> Bienvenue </span> dans votre <br> station de ski <br> Val D'Isère</h2>
-        <div class="rewards">
-          <img src="/src/assets/images/certification.png" alt="certification">
-          <p>Elu meilleur station <br> de France 2023</p>
+    <header class="header">
+      <a href="#" class="logo"><img src="/src/assets/images/logoAccueil.png" alt=""/></a>
+      <nav class="navbar">
+        <a class="nav_link active" href="#">Accueil</a>
+        <a class="nav_link" href="/src/activities.html">Activités</a>
+        <a class="nav_link" href="/src/timetable.html">Horaires</a>
+        <a class="reserv" href="/src/registration.html">Réservation</a>
+      </nav>
+    </header>
+    <main>
+      <section class="first_content">
+        <div class="left_part">
+          <h2>
+            <span class="welcome"> Bienvenue </span> dans votre <br />
+            station de ski <br /><span class="nameH2"> ~ Val D'Isère ~ </span>
+          </h2>
+          <div class="rewards">
+            <img src="/src/assets/images/certification.png" alt="certification"/>
+            <p>Élue meilleure station de France 2023</p>
+          </div>
         </div>
-      </div>
-      </main>
-    </div>
-    
-</body>
+        <img src="/src/assets/images/carteFrance.png" alt="carteFrance" />
+        <div class="scroll">
+          <span class="scroll-icon">
+            <span class="scroll-icon__dot"></span>
+          </span>
+        </div>
+      </section>
+      <h2 class="title_activities">Découvrez nos <span class="welcome">différentes activités </span>  qui embelliront <span class="underline">votre séjour</span> ! <box-icon name='sun' animation='tada' ></box-icon></h2>
+      <section id="test_card">
+        <div id="first_content">
+          <h3>Ski de piste</h3>
+        </div>
+        <div id="second_content">
+          <h3>Randonée</h3>
+        </div>
+        <div id="third_content">
+          <h3>VTT</h3>
+        </div>
+        <div id="more_activities">
+          <h3>Et bien plus encore</h3>
+          <a class="reserv" href="/src/activities.html">Découvrez toutes nos activités</a>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
 </html>
