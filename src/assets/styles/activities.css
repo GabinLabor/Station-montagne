@@ -69,7 +69,7 @@ body {
   display: none;
 }
 /* BREAKPOINTS */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .header {
     padding: 1.25rem 4%;
   }
@@ -108,7 +108,7 @@ body {
   .nav-bg.active {
     display: block;
   }
-}
+} */
 
 header img {
   width: 100px;
@@ -229,6 +229,7 @@ a {
 }
 .activity {
   margin-top: 20px;
+
   width: 100%;
   height: 100%;
   background-color: #cae8f3;
@@ -246,6 +247,11 @@ img {
 
 .listing-activities > .activity-description {
   margin: 20px;
+}
+
+.activity-description {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* activite ete */
@@ -268,7 +274,9 @@ img {
 }
 
 /* activite ete grid */
-
+.definition-activities-summer p {
+  font-size: 19px;
+}
 .grid > div > img {
   width: 100%;
   height: 100%;
@@ -328,4 +336,114 @@ img {
   -ms-transform: scale(1.25);
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
+}
+
+/* media queries responsive */
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #cae8f3;
+  }
+  .list-activities {
+    display: none;
+  }
+  .listing-activities {
+    display: flex;
+    flex-direction: column;
+  }
+  .activity {
+    width: 100vw;
+  }
+  .definition-activities-summer {
+    display: none;
+  }
+
+  .title-activities-summer {
+    width: 100%;
+  }
+  .title-activities-summer > h1 {
+    width: 100%;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(203, 15, 18, 0.5);
+    text-align: center;
+  }
+  .activities-summer-header {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+    height: 100px;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .activities-summer-header {
+    margin-top: 10px;
+  }
+  .definition-activities {
+    background: rgba(203, 15, 18, 0.6);
+  }
+
+  /* Responsive nav barre */
+  #icones {
+    display: block;
+  }
+  .nav_link.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(203, 15, 18, 0.3);
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+/* Responsive nav barre */
+#icones {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
