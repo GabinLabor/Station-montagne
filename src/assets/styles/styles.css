@@ -1,13 +1,31 @@
+body {
+  overflow-x: hidden;
+}
 
-
-.first_background {
+.first_content {
     min-height: 100vh;
     max-height: 100vh;
     background: url("/src/assets/images/imageBackground.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
+
+.first_content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* Hauteur du fondu */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+
+
+                                            /* Début Header */
 
 .header {
   top: 0;
@@ -21,7 +39,11 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   z-index: 100;
   overflow: hidden;
+  position: absolute;
+  width: 100%;
 }
+
+
 .header::before {
   content: "";
   position: absolute;
@@ -153,20 +175,25 @@ header img {
     box-shadow: none;
     transform: translateY(4px);
   }
-  
-  main {
-    margin-top: 100px;   
-  }
+
+
+
+
+                                    /* Fin Header */
 
   main h2 {
     text-align: left;
-    font-size: 70px;
-    line-height: 2em;
+    font-size: 80px;
+    line-height: 1.5em;
     font-weight: 300;
     margin-left: 70px;
   }
 
-  main span {
+  .legend {
+    text-align: center;
+  }
+
+  .welcome {
     font-weight: 900;
   }
 
@@ -176,24 +203,168 @@ header img {
     justify-content: space-between;
   }
 
-  .rewards img {
+  .first_content img {
+    width: 30%;
+    height: 30%;
+    margin-right: 80px;
+  }
+
+
+  .left_part img {
     height: 70px;
     width: 70px;
+  }
+
+  .nameH2 {
+    font-weight: bold;
   }
 
   .rewards {
     width: 50%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin:80px 0 0 50px;
   }
 
   .rewards p {
-    font-size: 50px;
-    line-height: 2em;
+    font-size: 30px;
     font-weight: 300;
     text-align: center;
   }
 
+  @keyframes scroll_2 {
+    0%   { transform: translateY(0); opacity: 1; }
+    25%  { opacity: 1; }
+    75%  { transform: translateY(.75em); opacity: 0; }
+    100% { transform: translateY(0); opacity: 0; }
+  }
+  
+  .scroll-icon__dot {
+    display: block;
+    position: absolute;
+    left: 50%;
+    background: #423FA6;
+    height: .5em;
+    width: .5em;
+    top: .6em;
+    margin-left: -.25em;
+    border-radius: 50%;
+    transform-origin: top center;
+    backface-visibility: hidden;
+    animation: scroll_2 2s ease-out infinite;
+  }
 
+  .scroll-icon {
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: .25em solid #423FA6;
+    border-radius: 1em;
+  }
+  
+  .page-wrap {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .scroll {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+  }
+
+  .activities {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  
+
+  .activities p:first-child {
+    align-items: center;
+    margin-top: 00px;
+    width: 50vw;
+    font-size: 40px;
+  }
+
+  .underline {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+
+  .title_activities {
+    font-size: 52px;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+
+#test_card {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+#test_card div {
+  width: 100%;
+  height: 100%;
+}
+
+#test_card div h3 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 48px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+#first_content {
+  background-image: url('/src/assets/images/skiCard.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#second_content {
+  background-image: url('/src/assets/images/randoBackground.jpg');
+  background-size: cover;
+  background-position: 70%;
+  background-repeat: no-repeat;
+}
+
+#third_content {
+  background-image: url('/src/assets/images/veloCard.jpg');
+  background-size: cover;
+  background-position: 80%;
+  background-repeat: no-repeat;
+}
+
+#more_activities {
+  background: url('/src/assets/images/moreActivitiesBackground.jpg');
+  background-size: cover;
+  background-position: 30%;
+  background-repeat: no-repeat;
+  width: 60%;
+}
+
+#more_activities a {
+  margin-left: 80px;
+  margin-top: 50%;
+  width: 60%;
+}
