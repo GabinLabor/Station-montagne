@@ -5,7 +5,7 @@ body {
 .first_content {
     min-height: 100vh;
     max-height: 100vh;
-    background: url("/src/assets/images/imageBackground.jpg") no-repeat;
+    background: url("../images/imageBackground.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -335,28 +335,28 @@ header img {
 }
 
 #first_content {
-  background-image: url('/src/assets/images/skiCard.avif');
+  background-image: url('../images/skiCard.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #second_content {
-  background-image: url('/src/assets/images/randoBackground.jpg');
+  background-image: url('../images/randoBackground.jpg');
   background-size: cover;
   background-position: 70%;
   background-repeat: no-repeat;
 }
 
 #third_content {
-  background-image: url('/src/assets/images/veloCard.jpg');
+  background-image: url('../images/veloCard.jpg');
   background-size: cover;
   background-position: 80%;
   background-repeat: no-repeat;
 }
 
 #more_activities {
-  background: url('/src/assets/images/moreActivitiesBackground.jpg');
+  background: url('../images/moreActivitiesBackground.jpg');
   background-size: cover;
   background-position: 30%;
   background-repeat: no-repeat;
