@@ -1,3 +1,4 @@
+/* Responsive à partir de 415px de width */
 .timetable, .flex-container, .date, .days, .tracks, .open, .hours {
     display: flex;
 }
@@ -16,16 +17,9 @@
 }
 
 .flex-container {
-    flex-wrap: wrap;
     justify-content: center;
-}
-
-.date {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    justify-content: center;
-    margin: 0.5em 0 0.5em 0;
-    font-weight: bold;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .grid-container {
@@ -35,6 +29,17 @@
     gap: 0 0.5em;
     background-color: #b6f7e2;
     border-radius: 5px;
+    max-width: 800px;
+    flex-grow: 1;
+}
+
+.date {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-content: center;
+    margin: 0.5em 0 0.5em 0;
+    font-weight: bold;
+    
 }
 
 .days {
@@ -45,6 +50,7 @@
     font-weight: bold;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    
 }
 
 .tracks {
@@ -55,29 +61,36 @@
     display: grid;
     grid-template-rows: repeat(7, 1fr);
     gap: 0.2em 0;
+    width: 100%;
+    
 }
 
 .tracks p {
     padding: 0.1em;
     margin: 0.1em;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
 
 .open-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     align-self: center;
+    width: 100%;
 }
 
 .open-grid-container {
     display: grid;
     grid-template-rows: repeat(7, 1fr);
     gap: 0.2em 0;
+    
 }
 
 .open-grid-container div {
     padding: 0.1em;
     margin: 0.1em;
+    justify-items: center;
 }
 
 .open-track1, .open-track2, .open-track3, .open-track4, .open-track5, .open-track6, .open-track7 {
@@ -143,6 +156,7 @@
     display: grid;
     grid-template-rows: repeat(7, 1fr);
     gap: 0.2em 0;
+    width: 100%;
 }
 
 .hours p {
